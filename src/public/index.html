@@ -9,42 +9,109 @@
 <body>
     <header>
         <div class="header-content">
-            <a href="https://www.airbnb.com.ar/"><img src="../img/logo.png" alt="IDW alojamiento" height="40"></a> 
-            <h2>IDW alojamiento</h2>
+            <a href="/"><img class="logo-icon" src="../img/logo.png" alt="IDW alojamiento"></a> 
+            <span>IDW <br> alojamiento</span>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#alojamientos">Alojamientos</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Alojamientos</a></li>
-            <li><a href="#">Reservas</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
     <main>
-        <section class="hero">
-            <h1>Encuentra tu alojamiento en este sitio</h1>
-            <p>Esto es un párrafo para agregar información a nuestra portada de sitio de alojamiento</p>
+        <section class="intro">
+            <h1>IDW encuentra tu <span class="rojo">alojamiento</span></h1>
+            <p>Muchas opciones, <span class="italics">un solo lugar</span></p>
         </section>
 
-        <section class="container featured-hotels">
-            <div class="hotel">
-                <img src="../img/hotel.png" alt="hotel">
-                <a href="https://www.hotelkilton.com.ar/"> Hotel 1</a>
+        <section class="container-alojamientos" id="alojamientos">
+            <div class="item">
+                <img src="https://img.rentberry.com/BTRW7nyKznoM_dwBAl7hf7GDZpWQAvwJhLs5l9Y-Q-0/auto/440/440/sm/1/plain/media/apartments/8220c0bdc3de69c0201531a86f37624730eceefd.jpg@webp" alt="hotel">
+                <a href="alojamiento-Miami.html"><span class="rojo">Departamento</span> - Miami EEUU</a>
+                <div class="texto">
+                    <p>Ubicado en pleno centro de Miami y a pocos metros de las mejores atracciones</p>
+                    <span class="price rojo">U$S60<br>/noche</span>
+                    <button class="reservar">¡Reservar <span class="rojo">YA</span>!</button>
+                </div>
             </div>
-            <div class="hotel">
-                <img src="../img/hotel.png" alt="hotel">
-                <a href="https://www.hotelkilton.com.ar/"> Hotel 2</a>
+            <div class="item">
+                <img src="https://cdn.liverez.com/5/12906/1/80580/800/17.jpg?v=10/11/2020%201:57:28%20PM" alt="hotel">
+                <a href=""><span class="rojo">Cabina</span> - Cozumel Mexico</a>
+                <div class="texto">
+                    <p>Ubicado en pleno centro de Cozumel y a pocos metros de las mejores atracciones</p>
+                    <span class="price rojo">U$S55<br>/noche</span>
+                    <button class="reservar">¡Reservar <span class="rojo">YA</span>!</button>
+                </div>
             </div>
-            <div class="hotel">
-                <img src="../img/hotel.png" alt="hotel">
-                <a href="https://www.hotelkilton.com.ar/"> Hotel 3</a>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSviFd2MuWwFhiL0hV2LFUplDadpj7QccIFNiFtf2Svsg&s" alt="hotel">
+                <a href=""><span class="rojo">Casa</span> - Mendoza Argentina</a>
+                <div class="texto">
+                    <p>Ubicado en pleno centro de Mendoza y a pocos metros de las mejores atracciones</p>
+                    <span class="price rojo">U$S20<br>/noche</span>
+                    <button class="reservar">¡Reservar <span class="rojo">YA</span>!</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://img.rentberry.com/BTRW7nyKznoM_dwBAl7hf7GDZpWQAvwJhLs5l9Y-Q-0/auto/440/440/sm/1/plain/media/apartments/8220c0bdc3de69c0201531a86f37624730eceefd.jpg@webp" alt="hotel">
+                <a href=""><span class="rojo">Departamento</span> - Miami EEUU</a>
+                <div class="texto">
+                    <p>Ubicado en pleno centro de Miami y a pocos metros de las mejores atracciones</p>
+                    <span class="price rojo">U$S60<br>/noche</span>
+                    <button class="reservar">¡Reservar <span class="rojo">YA</span>!</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://cdn.liverez.com/5/12906/1/80580/800/17.jpg?v=10/11/2020%201:57:28%20PM" alt="hotel">
+                <a href=""><span class="rojo">Cabina</span> - Cozumel Mexico</a>
+                <div class="texto">
+                    <p>Ubicado en pleno centro de Cozumel y a pocos metros de las mejores atracciones</p>
+                    <span class="price rojo">U$S55<br>/noche</span>
+                    <button class="reservar">¡Reservar <span class="rojo">YA</span>!</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSviFd2MuWwFhiL0hV2LFUplDadpj7QccIFNiFtf2Svsg&s" alt="hotel">
+                <a href=""><span class="rojo">Casa</span> - Mendoza Argentina</a>
+                <div class="texto">
+                    <p>Ubicado en pleno centro de Mendoza y a pocos metros de las mejores atracciones</p>
+                    <span class="price rojo">U$S20<br>/noche</span>
+                    <button class="reservar">¡Reservar <span class="rojo">YA</span>!</button>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer">
-            <p>&copy; IDW 2024. Todos los derechos reservados.</p>
+        <div class="footer" id="contacto">
+            <div class="columns">
+                <div>
+                    <a href="">Politicas de provacidad</a>
+                    <a href="">Carreras</a>
+                    <a href="">Servicio al cliente</a>
+                    <a href="">Politicas de cancelación</a>
+                    <a href="">Creditos</a>
+                </div>
+                <div>
+                    <a href="">Todos los destinos</a>
+                    <a href="">Tipos de alojamientos</a>
+                    <a href="">Descubri ofertas</a>
+                    <a href="">Premios para viajeros</a>
+                    <a href="sobre.html">IDW alojamientos</a>
+                </div>
+                <div>
+                    <a href="">Casas</a>
+                    <a href="">Departamentos</a>
+                    <a href="">Resorts</a>
+                    <a href="">Hostels</a>
+                    <a href="">Cabinas</a>
+                </div>
+            </div>
+            <div class="rights">
+                <p>&copy; IDW 2024. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 </body>

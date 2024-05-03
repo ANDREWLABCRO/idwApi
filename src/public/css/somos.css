@@ -1,0 +1,10 @@
+.article h1 {
+  font-size: 2em;
+  padding: 20px;
+}
+
+.article p {
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+

@@ -17,6 +17,14 @@ app.get('/edit', (req,res) => {
   res.sendFile(join(__dirname,'public/edit.html'));
 });
 
+app.get('/alojamiento-Miami', (req,res) => {
+  res.sendFile(join(__dirname,'public/alojamiento-Miami.html'));
+});
+
+app.get('/sobre', (req,res) => {
+  res.sendFile(join(__dirname,'public/sobre.html'));
+});
+
 app.use(express.static(join(__dirname, 'public')));
 
 // Manejo de errores

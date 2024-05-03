@@ -1,83 +1,241 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
 * {
+    font-family: "Radio Canada Big", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-/* Estilo para la barra de nav */
+
+.rojo {
+    color: rgb(126, 22, 22);
+}
+
+.italics {
+    position: relative;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.italics::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 120%; 
+    height: 10px; 
+    background: rgb(147, 23, 4, 0.5); 
+    transform: skewX(45deg) skewY(-3deg); 
+    border-radius: 5px;
+}
+
+/* Estilo para el header */
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    max-width: 40px;
+    margin: 20px;
+}
+
+.header-content span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
 nav {
-    background-color: #333;
+    max-width: 100%;
+    padding-right: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
+    list-style-type: none;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 10px 15px;
+    color: rgb(123, 25, 25);
+    cursor: pointer;
 }
 
-nav ul li a:hover {
-    background-color: #555;
-}
+/* Estilo para el body: intro */
 
-/* Estilo para body */
-body{
-    font-size: 22px;
-    background-color: #fff;
-    color: #555;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.featured-hotels{
+.intro {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 50px  ;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-image: url(https://media.traveler.es/photos/6137827f68a6ada2592a88fd/4:3/w_1064,h_798,c_limit/18827.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.hotel {
-    flex: 0 1 30%;
-    text-align: center;
-}
-
-.hotel img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.hotel a {
-    color:#555;
-    text-decoration: none;
-    font-size: 18px;
-    font-family:Arial, Helvetica, sans-serif;
+.intro::after {
+    content: '';
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
+.intro h1 {
+    font-size: 2em;
+    padding: 5px;
+}
+
+.intro p {
+    font-size: 1.5em;
+}
+
+.intro h1, p {
+    letter-spacing: 1.5px;
+    z-index: 5;
+}
+
+/* Estilo para el body: imagenes */
+
+.container-alojamientos {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-alojamientos .item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-block: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+}
+
+.item a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.texto {
+    display: flex;
+    padding: 10px 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.texto p {
+    font-size: 0.7em;
+    width: 100%;
+    text-align: justify;
+}
+
+.price {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.reservar {
+    max-width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(241, 142, 142);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 30vh;
+    background-image: linear-gradient(to right, rgb(238, 187, 187), rgb(249, 131, 131));
+    clear: both;
+}
+
+footer div {
+    width: 100%;
+}
+
+.columns {
+    display: flex;
+    flex: 1;
+    padding: 5rem;
+    justify-content: space-around;
+}
+
+.columns div a {
+    display: block;
+    text-decoration: none;
+    color: rgb(21, 0, 255);
+    cursor: pointer;
+}
+
+.rights {
     text-align: center;
-    padding: 30px 0;
+    padding-block: 2rem;
+}
+
+@media (max-width: 620px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        width: 100%;
+        padding-right: 0px;
+    }
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+        gap: 0rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        margin-inline: 20em;
+    }
 }

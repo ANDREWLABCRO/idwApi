@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+.grande {
+  font-size: 1.5em;
+}
+
+.titulo {
+  padding: 2em 1em;
+}
+
+.titulo h1 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.titulo p {
+  padding-top: 5px;
+  color: rgb(70, 69, 69);
+}
+
+.fotos {
+  display: flex;
+  gap: 10px;
+  height: 70vh;
+  /* border: 2px solid red; */
+  border-radius: 1em;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+.foto-grande {
+  width: 50%;
+  background-image: url(https://www.golodgroup.com/wp-content/uploads/2017/03/JADE-BEACH-CONDOMINIUM-Miami-FL7-1740x960-c-center.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fotos-pequenas {
+  display: grid;
+  grid-template-areas: 
+      "foto1 foto2"
+      "foto3 foto4";
+  grid-gap: 10px;
+  width: 50%;
+  /* border: 2px solid rgb(53, 129, 210); */
+}
+
+.foto1 {
+  grid-area: foto1;
+  background-color: beige;
+
+  background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/LQYWNEHAABHXNBBDIVH7P6UDDU.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto2 {
+  grid-area: foto2;
+  background-color: rgb(177, 177, 57);
+
+  background-image: url(https://visitarmiami.net/wp-content/uploads/sites/9/2016/09/Apartamentos-en-miami.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto3 {
+  grid-area: foto3;
+  background-color: rgb(52, 52, 17);
+
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/548425088.jpg?k=0903506b3cd458c94bec0d0dfbbd692372d31e559c3584139ea7c9d4f41ec299&o=&hp=1);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto4 {
+  grid-area: foto4;
+  background-color: rgb(219, 219, 6);
+
+  background-image: url(https://www.rent.com/blog/wp-content/uploads/2022/12/cascade_95329a1131ef96b773788a6583175bda.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.descripcion {
+  float: left;
+  width: 65%;
+  margin-right: 10%;
+}
+
+.descripcion p {
+  text-indent: 20px;
+  padding: 10px 0;
+}
+
+.primerParrafo::first-letter {
+  font-size: 150%;
+  color: rgb(111, 30, 30);
+}
+
+form {
+  width: 25%;
+  box-shadow: 0 0 4px rgb(0, 0, 0, 05);
+  padding: 10px;
+  float: right;
+  border-radius: 20px;
+}
+
+.dates {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.guests {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cuadro1, .cuadro2 {
+  min-width: 25%;
+}
+
+.cuadro1, .cuadro2, .cuadro3 {
+  text-align: center;
+}
+
+.cuadro3 {
+  min-width: 50%;
+}
+
+@media (max-width: 620px) {
+  .fotos {
+    height: 40vh;
+  }
+  .titulo h1 {
+    width: 75%;
+  }
+  .descripcion, form {
+    float: none;
+    width: 90%;
+    margin: 0 auto;;
+  }
+  form {
+    background-color: white;
+    position: sticky;
+    margin-bottom: 10px;
+    bottom: 0px;
+  }
+}
